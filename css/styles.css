@@ -27,11 +27,43 @@ body{
 }
 
 .button{
-    background-color: #001f3f;
+    background-color: #4d84bb;
     width: 140px;
     height: 25px;
     border-radius: 22px;
     color:white
+    outline: none;
+     
 }
 
+.emailbox, .name, .surname{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    position: relative;
+    width: 250px;
+    padding: 10px;
+    border: 1px solid #001f3f;
+    background: transparent;
+    border-radius: 5px;
+    outline: none;
+    color: #fff;
+    font-size: 1em;
+    text-transform:lowercase;
+    transition: 0.5s;
+    
+    
+}
 
+.emailbox, .name, .surname input:valid, 
+.emailbox, .name, .surname input:focus{
+    transform: translateX(10px) translateY(-7px);
+    color:#001f3f; 
+    border-left: 1px solid #001f3f;
+    border-right: 1px solid #001f3f;
+}
+
+.order-list{
+    align-items: center;
+}
